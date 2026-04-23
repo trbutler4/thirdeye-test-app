@@ -6,3 +6,6 @@ result-*
 .DS_Store
 *.log
 .envrc
+
+*storybook.log
+storybook-static
