@@ -9,7 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "thirdeye": "node ../lost-pixel/packages/cli/dist/bin.mjs",
+    "thirdeye:update": "node ../lost-pixel/packages/cli/dist/bin.mjs update",
+    "vr:test": "yarn build-storybook && yarn thirdeye",
+    "vr:update": "yarn build-storybook && yarn thirdeye:update"
   },
   "dependencies": {
     "react": "^19.2.5",
